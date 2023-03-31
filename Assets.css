@@ -1,0 +1,176 @@
+body{
+    background-color: #f8f9fa;
+    overflow-y: scroll;
+    margin:0
+}
+.pagecontainer{
+    padding: 0.05px 3.25em;
+    box-sizing: border-box;
+    background-color: white;
+    position: relative;
+    min-width: none;
+    min-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+}
+header{
+    display: flex;
+    min-height: 50px;
+    padding: 8px 0;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+    
+}
+header{
+    position: relative;
+    z-index: 4;
+}
+.HeaderStart{
+    display: flex;
+    height: 50;
+    
+}
+.Menu_icon{
+    width: 30px;
+    height: 30px;
+    top:25px;
+    left: 10px;
+    margin-left: -12px;
+    margin-right: -12px;
+    position: absolute;
+}
+.MenuIcon{
+    width: 30px;
+    height: 30px;
+}
+.Logo{  background-color: transparent;
+    margin-left: 20px;
+    min-width: 202px;
+    height: 50px;
+}
+.Logo img{
+    background-color: transparent;
+    margin-left: 20px;
+    min-width: 202px;
+    height: 50px;
+}
+.HeaderEnd{
+    flex-grow: 1px;
+}
+.HeaderEnd{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 50px;
+    padding-left: 36px;
+}
+form {
+    border: 0;
+    margin: 0;
+}
+.SearchContainer {
+    padding-left: 24px;
+    margin-left: -24px;
+    margin-right: 12px;
+}
+.SearchBar{
+    display: flex;
+    border:black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    height: 32px;
+    width: 524px;
+
+}
+
+
+.SearchBar input{
+    left: 9px;
+    padding-left: 5px ;
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 32px;
+    line-height: 1.4285714; 
+    width: 434px;
+    border: none;
+    outline: none;
+}
+
+.SearchBar button{
+    background-color: none;
+    height: 31px;
+    border: none;
+    outline: none;
+    opacity: 0;
+    transition: opacity 250ms;
+    
+    
+}
+.SearchBar button:focus {
+    opacity: 1;
+}
+.SearchBar:hover button {
+    opacity: 1;
+}
+.SearchBar button:not(.SearchBar button--weight-quiet):enabled{
+    background-color: #f8f9fa;
+    border-color: #a2a9b1;
+}
+.SearchBar button:enabled {
+    color: black;
+}
+
+.searchIcon{
+    position: relative;
+    top: 50%;
+    min-width: 20px;
+    min-height: 20px;
+    left:9px;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    transform: translateY(-50%);
+}
+.Infobar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    flex-shrink: 1;
+
+    
+}
+.Infobar .InfoContent{
+    left:auto;
+    right:0;
+}
+.ContentMenu{
+    list-style: none;
+    display:flex;
+}
+.ContentMenu li{
+    padding-left: 20px;
+}
+.ContentMenu li a {
+    font-family:sans-serif;
+    text-decoration: none;
+}
+.NavDrop {
+    padding: 20px;
+}
+main{
+    min-height: calc(100vh - 66px);
+}
+.EmptyContainer{
+    width: 100vw;
+    height: 24px;
+}
+.SideNav{
+    width: 270px;
+    min-height: calc(100vh - 66px);
+    position: sticky;
+}
